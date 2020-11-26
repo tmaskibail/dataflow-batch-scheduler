@@ -63,7 +63,7 @@ public class GcpFileMover {
             LOG.error("error occurred while creating credentials from ", e);
         }
 
-        Storage storage = StorageOptions.getDefaultInstance()
+        Storage storage = StorageOptions
                 .newBuilder()
                 .setProjectId(projectId)
                 .setCredentials(credentials)
