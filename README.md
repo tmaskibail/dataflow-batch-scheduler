@@ -1,7 +1,7 @@
 # Dataflow Batch Scheduler 
 
 This is a dummy application which 
-* triggers once very x minutes
+* triggers once every x minutes
 * moves all the CSV files from a source GCS bucket to a processing GCS bucket 
 * triggers Dataflow batch job to ingest the data from CSV files in processing GCS bucket into a Bigquery table 
 * polls the Dataflow job via REST API to check whether it was DONE/CANCELLED/FAILED 
